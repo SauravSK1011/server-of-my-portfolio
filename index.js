@@ -52,6 +52,7 @@ app.get("/add-Project", async (req, res) => {
       
     ]);
     res.json({ Data: "Added" });
+    res.send("Added");
   } catch (error) {
     console.log("err", +error);
   }
